@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* フッター */}
       <footer className="mt-auto text-sm text-gray-500 text-center pt-10">
-        © 2025 Nina.design. All rights reserved.
+        © 2025 Sae.Design. All rights reserved.
       </footer>
     </div>
   );
