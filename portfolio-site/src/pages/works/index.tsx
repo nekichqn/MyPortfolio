@@ -31,6 +31,18 @@ export default function Works() {
           </div>
         ))}
       </div>
+
+      <div className="mt-12 text-center">
+        <a
+          href="/"
+          className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+        >
+          プロフィールに戻る
+        </a>
+      </div>
+
     </main>
+    
   );
 }
+
