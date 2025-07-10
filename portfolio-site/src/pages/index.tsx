@@ -1,43 +1,37 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 gap-16 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <header className="text-center mt-8">
-        <h1 className="text-4xl font-bold">My Portfolio</h1>
-        <p className="mt-2 text-gray-600">Web Design / Illustrator / Photoshop</p>
-      </header>
-
-      <main className="flex flex-col items-center gap-8">
+    <div className="min-h-screen bg-gradient-to-b from-[#fdfcfa] to-[#f1f1f1] text-black flex flex-col items-center px-4 py-10">
+      {/* ヘッダー（ロゴ・見出し・説明） */}
+      <header className="text-center space-y-4">
         <Image
-          src="/img/logo2.png"
-          alt="My Logo"
+          src="/img/cat.png" // ← 差し替え自由（public/works/logo.png に画像が必要）
+          alt="logo"
           width={120}
           height={120}
+          className="mx-auto rounded-full shadow-md"
         />
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">My Portfolio</h1>
+        <p className="text-gray-500 text-base sm:text-lg">
+          Web Design / Illustrator / Photoshop
+        </p>
+      </header>
+
+      {/* 中央の作品誘導ボックス */}
+      <section className="mt-10 bg-white shadow-lg p-6 sm:p-8 rounded-2xl border w-full max-w-sm text-center space-y-4">
+        <p className="text-lg sm:text-xl font-medium">ポートフォリオをご覧ください</p>
         <a
           href="/works"
-          className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+          className="inline-block bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
         >
           作品を見る
         </a>
-      </main>
+      </section>
 
-      <footer className="text-sm text-gray-500 text-center mb-4">
-        © 2025 My Portfolio. All rights reserved.
+      {/* フッター */}
+      <footer className="mt-auto text-sm text-gray-500 text-center pt-10">
+        © 2025 Nina.design. All rights reserved.
       </footer>
     </div>
   );
