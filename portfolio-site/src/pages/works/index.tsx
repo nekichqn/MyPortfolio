@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Works() {
   const works = [
@@ -20,11 +21,12 @@ export default function Works() {
       url: "https://nekichqn.github.io/mbti-site/",
     },
     {
-      src: "/img/works/web03.png",
-      alt: "作品3 Webサイトデザイン制作",
-      label: "Webサイトデザイン制作",
+      src: "/img/works/web04.png",
+      alt: "作品3 Webサイト制作",
+      label: "美味しいレストランを見つけよう",
       description:
-        "Figmaを使用し、Webサイトのデザインを制作しました。\n\nシンプルでみやすく、ユーザーが直感的に操作できるように心掛けました。\n架空のブランドですが、かわいく高級感のあるイメージに沿ったデザインに仕上げています。\nまた、このデザインは実際のコーディングにも対応可能なように設計されています。",
+        "HotPepperのAPIを使用して、近くのレストランを検索するサイトです。\n\nHTML、CSS、JavaScriptを使用し、レスポンシブ対応で制作しました。\nまた、GoogleMapAPIを使用し地図の表示もしています。\nこの作品では、APIの活用方法やデータの取得・表示について学びました。",
+        url: "https://nekichqn.github.io/RestaurantSearch/index.html",
     },
     {
       src: "/img/works/mv01.png",

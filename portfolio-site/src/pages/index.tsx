@@ -20,37 +20,37 @@ export default function Home() {
 
       {/* 自己紹介 */}
       <section className="mt-8 max-w-xl bg-white p-8 rounded-2xl shadow-lg text-left space-y-8">
-        <h2 className="text-3xl font-bold mb-6 border-b-2 border-pink-300 pb-2">PROFILE</h2>
+        <h2 className="text-3xl font-bold mb-6 border-b-2 border-pink-200 pb-2">PROFILE</h2>
 
         <dl className="grid grid-cols-2 gap-y-6 gap-x-8">
           <div>
-            <dt className="text-pink-500 font-semibold mb-1">name</dt>
-            <dd className="text-gray-800 text-lg">飯島 さえら</dd>
+            <dt className="text-pink-300 font-semibold mb-1">name</dt>
+            <dd className="text-gray-800 text-lg">飯島 さえら - Saera IIjima</dd>
           </div>
           <div>
-            <dt className="text-pink-500 font-semibold mb-1">location</dt>
-            <dd className="text-gray-800 text-lg">東京都</dd>
+            <dt className="text-pink-300 font-semibold mb-1">location</dt>
+            <dd className="text-gray-800 text-lg">東京都 - Japan,Tokyo</dd>
           </div>
           <div>
-            <dt className="text-pink-500 font-semibold mb-1">hobbies</dt>
+            <dt className="text-pink-300 font-semibold mb-1">hobbies</dt>
             <dd>
-              <span className="inline-block bg-pink-100 text-pink-700 rounded-full px-3 py-1 text-sm mr-2">音楽</span>
-              <span className="inline-block bg-pink-100 text-pink-700 rounded-full px-3 py-1 text-sm">可愛いもの集め</span>
+              <span className="inline-block bg-pink-100 text-pink-400 rounded-full px-3 py-1 text-sm mr-2">🎵 音楽</span>
+              <span className="inline-block bg-pink-100 text-pink-400 rounded-full px-3 py-1 text-sm">🎀 可愛いもの集め</span>
             </dd>
           </div>
           <div>
-            <dt className="text-pink-500 font-semibold mb-1">mbti</dt>
+            <dt className="text-pink-300 font-semibold mb-1">mbti</dt>
             <dd className="text-gray-800 text-lg">ENTP</dd>
           </div>
           <div>
-            <dt className="text-pink-500 font-semibold mb-1">color</dt>
-            <dd className="text-gray-800 text-lg">パステルカラー</dd>
+            <dt className="text-pink-300 font-semibold mb-1">favorite color</dt>
+            <dd className="text-gray-800 text-lg">パステルピンク</dd>
           </div>
         </dl>
 
 
         <div>
-          <h3 className="text-pink-500 font-semibold mb-2">skill</h3>
+          <h3 className="text-pink-300 font-semibold mb-2">skill</h3>
           <div className="flex flex-wrap gap-6 items-center">
             <div className="flex flex-col items-center w-20">
               <Image src="/img/icons/html.svg" alt="HTML" width={48} height={48} />
@@ -95,7 +95,7 @@ export default function Home() {
           href="/works"
           className="inline-block bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
         >
-          Go Works
+          View Works
         </a>
       </section>
 
