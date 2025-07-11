@@ -63,6 +63,10 @@ export default function Home() {
               <Image src="/img/icons/blender.svg" alt="blender" width={48} height={48} />
               <span className="mt-2 text-sm">blender</span>
             </div>
+            <div className="flex flex-col items-center w-20">
+              <Image src="/img/icons/github.svg" alt="GitHub" width={48} height={48} />
+              <span className="mt-2 text-sm">GitHub</span>
+            </div>
           </div>
         </div>
       </section>
