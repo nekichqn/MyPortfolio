@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link";  // ← ここを追加
 
 export default function Works() {
   const works = [
@@ -26,7 +26,7 @@ export default function Works() {
       label: "美味しいレストランを見つけよう",
       description:
         "HotPepperのAPIを使用して、近くのレストランを検索するサイトです。\n\nHTML、CSS、JavaScriptを使用し、レスポンシブ対応で制作しました。\nまた、GoogleMapAPIを使用し地図の表示もしています。\nこの作品では、APIの活用方法やデータの取得・表示について学びました。",
-        url: "https://nekichqn.github.io/RestaurantSearch/index.html",
+      url: "https://nekichqn.github.io/RestaurantSearch/index.html",
     },
     {
       src: "/img/works/mv01.png",
@@ -107,12 +107,11 @@ export default function Works() {
       </div>
 
       <div className="mt-12 text-center">
-        <a
-          href="/"
-          className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
-        >
-          Go Home
-        </a>
+        <Link href="/">
+          <a className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+            Go Home
+          </a>
+        </Link>
       </div>
 
       {/* モーダル */}
@@ -154,7 +153,6 @@ export default function Works() {
             className="relative bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-auto p-6 z-40"
             onClick={(e) => e.stopPropagation()}
           >
-
             {/* 内容 */}
             <div className="relative w-full h-[400px] sm:h-[500px] mb-4">
               <Image src={selectedWork.src} alt={selectedWork.alt} fill className="object-contain" />

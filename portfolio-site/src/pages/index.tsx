@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";  // ← これを追加
 
 export default function Home() {
   return (
@@ -48,7 +49,6 @@ export default function Home() {
           </div>
         </dl>
 
-
         <div>
           <h3 className="text-pink-300 font-semibold mb-2">skill</h3>
           <div className="flex flex-wrap gap-6 items-center">
@@ -88,15 +88,13 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* 作品誘導ボックス */}
       <section className="mt-10 w-full max-w-sm text-center">
-        <a
-          href="/works"
-          className="inline-block bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
-        >
-          View Works
-        </a>
+        <Link href="/works">
+          <a className="inline-block bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition">
+            View Works
+          </a>
+        </Link>
       </section>
 
       {/* フッター */}
