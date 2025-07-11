@@ -12,28 +12,45 @@ export default function Home() {
           height={120}
           className="mx-auto rounded-full shadow-md"
         />
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Profile</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Sae</h1>
         <p className="text-gray-500 text-base sm:text-lg">
           Web Design / Illustrator / Photoshop / Figma
         </p>
       </header>
 
       {/* 自己紹介 */}
-      <section className="mt-8 max-w-xl bg-white p-6 rounded-xl shadow-md text-left space-y-6">
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">自己紹介</h2>
-          <ul className="text-gray-700 leading-relaxed list-disc list-inside space-y-2">
-            <li><strong>名前：</strong> Sae</li>
-            <li><strong>誕生日：</strong> 2003.04.07</li>
-            <li><strong>出身地：</strong> 東京都</li>
-            <li><strong>趣味：</strong> 音楽、ダンス、コスメ、かわいいもの集め</li>
-            <li><strong>MBTI：</strong> ENTP</li>
-            <li><strong>好きな色：</strong> パステルカラー</li>
-          </ul>
-        </div>
+      <section className="mt-8 max-w-xl bg-white p-8 rounded-2xl shadow-lg text-left space-y-8">
+        <h2 className="text-3xl font-bold mb-6 border-b-2 border-pink-300 pb-2">PROFILE</h2>
+
+        <dl className="grid grid-cols-2 gap-y-6 gap-x-8">
+          <div>
+            <dt className="text-pink-500 font-semibold mb-1">name</dt>
+            <dd className="text-gray-800 text-lg">飯島 さえら</dd>
+          </div>
+          <div>
+            <dt className="text-pink-500 font-semibold mb-1">location</dt>
+            <dd className="text-gray-800 text-lg">東京都</dd>
+          </div>
+          <div>
+            <dt className="text-pink-500 font-semibold mb-1">hobbies</dt>
+            <dd>
+              <span className="inline-block bg-pink-100 text-pink-700 rounded-full px-3 py-1 text-sm mr-2">音楽</span>
+              <span className="inline-block bg-pink-100 text-pink-700 rounded-full px-3 py-1 text-sm">可愛いもの集め</span>
+            </dd>
+          </div>
+          <div>
+            <dt className="text-pink-500 font-semibold mb-1">mbti</dt>
+            <dd className="text-gray-800 text-lg">ENTP</dd>
+          </div>
+          <div>
+            <dt className="text-pink-500 font-semibold mb-1">color</dt>
+            <dd className="text-gray-800 text-lg">パステルカラー</dd>
+          </div>
+        </dl>
+
 
         <div>
-          <h3 className="text-xl font-semibold mb-2">スキル</h3>
+          <h3 className="text-pink-500 font-semibold mb-2">skill</h3>
           <div className="flex flex-wrap gap-6 items-center">
             <div className="flex flex-col items-center w-20">
               <Image src="/img/icons/html.svg" alt="HTML" width={48} height={48} />
@@ -78,7 +95,7 @@ export default function Home() {
           href="/works"
           className="inline-block bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
         >
-          作品を見る
+          Go Works
         </a>
       </section>
 

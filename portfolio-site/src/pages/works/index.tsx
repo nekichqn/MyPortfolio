@@ -109,7 +109,7 @@ export default function Works() {
           href="/"
           className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
         >
-          プロフィールに戻る
+          Go Home
         </a>
       </div>
 
@@ -170,7 +170,7 @@ export default function Works() {
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
                 >
-                  サイトを見る
+                  Go WebSite
                 </a>
               </p>
             )}
